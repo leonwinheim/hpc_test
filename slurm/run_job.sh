@@ -8,8 +8,8 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=1G
 
-module load python/3.10
-source ~/my_project_envs/myenv/bin/activate
+module load devel/python/3.12.3-gnu-14.2
+source ~/hpc_test/envs/myenv/bin/activate
 
-cd /scratch/username/my_project_data
-srun python ../../my_project/src/heavy_part.py
+cd hpc_test
+srun python task.py
