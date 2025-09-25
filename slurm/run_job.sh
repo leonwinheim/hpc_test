@@ -5,8 +5,11 @@
 #SBATCH --partition=cpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
+#SBATCH --cpus-per-task=8
 #SBATCH --mem=1G
+
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=leon.winheim@kit.edu
 
 module load devel/python/3.12.3-gnu-14.2
 source ~/hpc_test/envs/myenv/bin/activate
