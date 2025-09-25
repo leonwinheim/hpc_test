@@ -2,7 +2,7 @@
 #SBATCH --job-name=test_hpc
 #SBATCH --output=temp/output_%j.log
 #SBATCH --time=00:01:00
-#SBATCH --partition=cpu
+#SBATCH --partition=gpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
